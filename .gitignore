@@ -1,0 +1,18 @@
+# Archivos y directorios generados por Maven
+target/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# General
+*.log
+*.tmp
+*.bak
+*.swp
+*.class
+
+# Otros
+HELP.md
