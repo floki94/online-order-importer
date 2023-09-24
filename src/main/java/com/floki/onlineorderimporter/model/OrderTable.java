@@ -10,6 +10,7 @@ import jakarta.persistence.IdClass;
 import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 
@@ -94,12 +95,22 @@ import java.util.UUID;
         return date;
     }
 
+    public String getFormattedDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return date.format(formatter);
+    }
+
     public void setDate(LocalDate date) {
         this.date = date;
     }
 
     public LocalDate getShip_date() {
         return ship_date;
+    }
+
+    public String getShipFormattedDate() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return ship_date.format(formatter);
     }
 
     public void setShip_date(LocalDate ship_date) {

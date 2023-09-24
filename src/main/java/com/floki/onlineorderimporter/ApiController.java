@@ -32,4 +32,14 @@ public class ApiController {
         apiService.fetchAndSaveDataLoop();
     }
 
+    @GetMapping("/fetchAndSaveDataLoopWebsocket")
+    public void fetchAndSaveDataLoopWebsocket() {
+        apiService.fetchAndSaveDataLoopWebsocket();
+    }
+
+    @GetMapping("/fetchAndSaveDataLoopNoFlux")
+    public void fetchAndSaveDataLoopNoFlux() {
+        apiService.fetchAndSaveDataLoopNoFlux();
+    }
+
 }
